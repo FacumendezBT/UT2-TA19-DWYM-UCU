@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+    <style>
+        #form {
+            width: 50%;
+            margin: 0 auto;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <form id="form">
+        <h1 class="title">Formulario - UT2-TA19</h1>
+        <div class="field">
+            <label class="label">Nombre *</label>
+            <div class="control">
+                <input id="nombre" class="input" type="text" placeholder="Nombre">
+            </div>
+            <p class="help is-danger is-hidden">El nombre no puede estar vacío</p>
+            <p class="help is-success is-hidden">El nombre es válido</p>
+        </div>
+        <div class="field">
+            <label class="label">Contraseña *</label>
+            <div class="control">
+                <input id="passwd" class="input" type="password" placeholder="Contraseña">
+            </div>
+            <p class="help is-danger is-hidden">La contraseña debe de tener al menos 8 caracteres</p>
+            <p class="help is-success is-hidden">La contraseña es válida</p>
+        </div>
+        <div class="field">
+            <label class="label">Email *</label>
+            <div class="control">
+                <input id="email" class="input" type="email" placeholder="Direccion de correo">
+            </div>
+            <p class="help is-danger is-hidden">El email no es válido, debe de tener el formato: usuario@dominio.com</p>
+            <p class="help is-success is-hidden">El email es válido</p>
+        </div>
+        <div class="field">
+            <div class="control">
+                <button id="btnEnviar" disabled class="button is-link">Enviar</button>
+            </div>
+        </div>
+    </form>
+    <script src="script.js"></script>
+</body>
+
+</html>
